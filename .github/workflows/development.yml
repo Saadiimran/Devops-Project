@@ -1,0 +1,48 @@
+name: Dev Deployment
+on:
+  push:
+    branches: [develop]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1) Check out your code
+      - uses: actions/checkout@v3
+
+      # 2) Set up Node.js environment
+      - name: Setup Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      # 3) Install dependencies
+      - name: Install dependencies
+        run: npm ci
+      - name: chmod something 
+        run: chmod +x node_modules/.bin/stylelint
+
+      # 4) Install linting tools
+      - name: Install HTMLHint & Stylelint
+        run: npm install --save-dev htmlhint stylelint stylelint-config-standard
+
+      # 5) Run HTMLHint against all .html files
+      - name: HTMLHint
+        run: npx htmlhint "**/*.html" --config .htmlhintrc.json
+
+      # 6) Run Stylelint against all .css files
+      - name: Stylelint
+        run: npx stylelint "**/*.css" --config .stylelintrc.json 
+      # 7) Check for any linting errors
+      - name: Check for linting errors
+        run: |
+          if [ $? -ne 0 ]; then
+            echo "Linting errors found. Please fix them before merging."
+            exit 1
+          else
+            echo "No linting errors found."
+          fi
+      - name: Build
+        run: npm run build
+      - name: Deploy to development-env
+        run: echo "Deploy to dev"
