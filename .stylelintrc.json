@@ -10,6 +10,6 @@
     "no-empty-source": null,
     "color-no-invalid-hex": true,
     "font-family-no-duplicate-names": true,
-    "font-family-no-missing-generic-family-keyword": true,
+    "font-family-no-missing-generic-family-keyword": true
   }
 }
