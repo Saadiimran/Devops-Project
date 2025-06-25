@@ -2,7 +2,7 @@
   "name": "term-project-f24",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build src/index.html --dist-dir dist"
   },
   "repository": {
@@ -16,7 +16,6 @@
     "url": "https://github.com/imranucp/term-project-f24/issues"
   },
   "homepage": "https://github.com/imranucp/term-project-f24#readme",
-  "main": "index.js",
   "devDependencies": {
     "htmlhint": "^1.6.3",
     "htmlint": "^0.0.7",
