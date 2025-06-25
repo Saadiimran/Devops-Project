@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "declaration-block-no-duplicate-properties": true,
+    "no-duplicate-selectors": true,
+    "property-no-unknown": true,
+    "value-keyword-case": "lower",
+    "selector-type-case": "lower",
+    "block-no-empty": true,
+    "no-empty-source": null
+  }
+}
