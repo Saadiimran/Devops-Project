@@ -7,6 +7,9 @@
     "value-keyword-case": "lower",
     "selector-type-case": "lower",
     "block-no-empty": true,
-    "no-empty-source": null
+    "no-empty-source": null,
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true
   }
 }

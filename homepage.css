@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hero section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.highlight {
+  color: #007acc;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  background-color: #007acc;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#hero-image {
+  max-width: 40%;
+  height: auto;
+}
+
+/* Introduction section */
+#intro {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+#intro h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Footer */
+#footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+}
+
+#footer a {
+  color: #007acc;
+  text-decoration: none;
+}

@@ -3,5 +3,8 @@
     "attr-lowercase": true,
     "alt-require": true,
     "id-unique": true,
-    "tag-pair": true
+    "tag-pair": true,
+    "doctype-first": true,
+    "attr-no-duplication": true,
+    "spec-char-escape": true
 }
