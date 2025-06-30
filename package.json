@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build homepage.html blog.html --dist-dir dist"
+    "build": "parcel build homepage.html blog.html services.html --dist-dir dist"
   },
   "repository": {
     "type": "git",
