@@ -25,6 +25,13 @@ body {
     transition: color 0.3s ease;
 }
 
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
 .footer-links a:hover {
     color: #ffeb3b;
 }
@@ -58,13 +65,6 @@ header {
     display: flex;
     list-style: none;
     gap: 30px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 .nav-menu a:hover,
