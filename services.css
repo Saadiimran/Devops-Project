@@ -48,15 +48,6 @@ header {
     gap: 30px;
 }
 
-footer .footer-links a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .footer-links a:hover {
-    color: #ffeb3b;
-}
 
 .nav-menu a {
     text-decoration: none;
@@ -68,6 +59,17 @@ footer .footer-links a:hover {
 .nav-menu a:hover,
 .nav-menu a.active {
     color: #005fa3;
+}
+
+
+footer .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #ffeb3b;
 }
 
 main {
@@ -162,7 +164,7 @@ footer .container {
     gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width <= 768px) {
     .nav-menu {
         gap: 15px;
     }
@@ -190,9 +192,10 @@ footer .container {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
-    }
+@media screen and (769px <= width <= 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
 }
+
