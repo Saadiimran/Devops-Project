@@ -170,29 +170,6 @@ footer .container {
   }
 }
 
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .service-card {
-        padding: 30px 20px;
-    }
-
-    footer .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-
 @media screen and (769px <= width <= 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
