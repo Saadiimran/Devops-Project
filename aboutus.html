@@ -1,58 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ProductX — About Us</title>
-  <link rel="stylesheet" href="aboutus.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Professional Portfolio</title>
+    <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
-  <nav id="site-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html" class="active">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contactus.html">Contact</a></li>
-    </ul>
-  </nav>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Portfolio</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <header id="about-hero">
-    <h1>About <span class="highlight">ProductX</span></h1>
-    <p>At ProductX, our mission is to deliver innovative solutions that empower businesses worldwide.</p>
-    <img src="https://source.unsplash.com/800x300?team" alt="Team collaborating" id="about-hero-image">
-  </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>About Our Team</h1>
+                <div class="team-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop" alt="Our creative team working together">
+                </div>
+            </div>
+        </section>
 
-  <section id="company-mission">
-    <h2>Our Mission</h2>
-    <p>We strive to enhance productivity, security, and scalability through user‑centric design and cutting‑edge technology.</p>
-  </section>
+        <section class="mission">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>
+                    We believe in the power of great design and strategic thinking to transform businesses and create 
+                    meaningful connections with audiences. Our mission is to deliver exceptional digital experiences 
+                    that not only look stunning but also drive measurable results for our clients. We combine creativity 
+                    with data-driven insights to ensure every project exceeds expectations and delivers real value.
+                </p>
+            </div>
+        </section>
 
-  <section id="team">
-    <h2>Meet the Team</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="https://source.unsplash.com/150x150?person1" alt="Alice Smith" class="member-photo">
-        <h3>Alice Smith</h3>
-        <p>Chief Executive Officer</p>
-      </div>
-      <div class="team-member">
-        <img src="https://source.unsplash.com/150x150?person2" alt="Bob Johnson" class="member-photo">
-        <h3>Bob Johnson</h3>
-        <p>Chief Technology Officer</p>
-      </div>
-      <div class="team-member">
-        <img src="https://source.unsplash.com/150x150?person3" alt="Carol Lee" class="member-photo">
-        <h3>Carol Lee</h3>
-        <p>Chief Operations Officer</p>
-      </div>
-    </div>
-  </section>
+        <section class="team">
+            <div class="container">
+                <h2>Meet the Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b812b833?w=200&h=200&fit=crop&crop=face" alt="Sarah Johnson, Creative Director">
+                        <h3>Sarah Johnson</h3>
+                        <p class="role">Creative Director</p>
+                        <p>Leading our creative vision with over 10 years of experience in digital design and brand strategy.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" alt="Michael Chen, Technical Lead">
+                        <h3>Michael Chen</h3>
+                        <p class="role">Technical Lead</p>
+                        <p>Bringing ideas to life with cutting-edge technology and a passion for clean, efficient code.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face" alt="Emily Rodriguez, UX Designer">
+                        <h3>Emily Rodriguez</h3>
+                        <p class="role">UX Designer</p>
+                        <p>Crafting intuitive user experiences that delight customers and drive business success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer id="footer">
-    <p>&copy; 2025 ProductX Corp. All rights reserved.</p>
-    <a href="index.html" class="back-link">&#8592; Back to Home</a>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Professional Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
