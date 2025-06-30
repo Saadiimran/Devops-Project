@@ -1,106 +1,226 @@
-/* Reset & Base */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fafafa;
+    font-family: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen, ubuntu, cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
 }
 
-/* Navigation reuses #site-nav from homepage.css */
-
-/* Hero */
-#about-hero {
-  text-align: center;
-  padding: 3rem 2rem;
-  background: #e8f4fc;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-#about-hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.75rem;
-  text-transform: capitalize;
+header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.team-member p {
-  font-size: 0.95rem;
-  color: #777;
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
-#about-hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #555;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #005fa3;
 }
 
-#about-hero-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-/* Mission */
-#company-mission {
-  padding: 2.5rem 2rem;
-  text-align: center;
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-#company-mission h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #005fa3;
 }
 
-#company-mission p {
-  font-size: 1rem;
-  color: #555;
+main {
+    margin-top: 70px;
 }
 
-/* Team Grid */
-#team {
-  padding: 2.5rem 2rem;
+.hero {
+    background: linear-gradient(135deg, #005fa3 0%, #004080 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.team-image {
+    margin-top: 20px;
+}
+
+.team-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mission {
+    padding: 80px 0;
+    background: white;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #005fa3;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #005fa3;
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .team-member {
-  text-align: center;
-  max-width: 200px;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.member-photo {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 0.75rem;
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #ffeb3b;
 }
 
 .team-member h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-
-/* Footer */
-#footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  background-color: #222;
-  color: #fff;
+.role {
+    color: #005fa3;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
-.back-link {
-  color: #005fa3;
-  text-decoration: none;
-  font-weight: 500;
+.team-member p:last-child {
+    color: #666;
+    line-height: 1.6;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffeb3b;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .mission h2,
+    .team h2 {
+        font-size: 2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
