@@ -183,40 +183,6 @@ footer .container {
     gap: 15px;
   }
 }
- 
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  
-  .portfolio-item {
-    min-height: auto;
-  }
-  
-  .portfolio-overlay {
-    position: static;
-    transform: none;
-    background: rgb(0 95 163 / 90%);
-    padding: 20px;
-  }
-  
-  .portfolio-overlay h3 {
-    color: #ffeb3b;
-  }
-  
-  footer .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
 
 /* stylelint-disable media-feature-range-notation */
 @media (min-width: 769px) and (max-width: 1024px) {
