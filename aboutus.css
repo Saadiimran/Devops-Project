@@ -1,88 +1,106 @@
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Navigation reuses #site-nav from homepage.css */
+
+/* Hero */
 #about-hero {
   text-align: center;
-  padding: 2rem;
-  background-color: #f5f5f5;
+  padding: 3rem 2rem;
+  background: #e8f4fc;
 }
 
 #about-hero h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
 }
 
 .team-member p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 0.95rem;
+  color: #777;
 }
 
 #about-hero p {
-  margin: 0.5rem 0 1rem;  
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
 }
 
 #about-hero-image {
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
+/* Mission */
 #company-mission {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
 }
 
 #company-mission h2 {
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 #company-mission p {
-  margin: 0;
   font-size: 1rem;
+  color: #555;
 }
 
+/* Team Grid */
 #team {
-  padding: 2rem;
-  text-align: center;
-}
-
-#team h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  padding: 2.5rem 2rem;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
   justify-items: center;
 }
 
 .team-member {
-  max-width: 180px;
+  text-align: center;
+  max-width: 200px;
 }
 
 .member-photo {
   width: 100%;
-  height: auto;
   border-radius: 50%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .team-member h3 {
-  font-size: 1.1rem;
-  margin: 0.25rem 0;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
 }
 
 
+/* Footer */
 #footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 0;
   background-color: #222;
   color: #fff;
 }
 
-#footer a {
-  color: #007acc;
+.back-link {
+  color: #005fa3;
   text-decoration: none;
+  font-weight: 500;
 }

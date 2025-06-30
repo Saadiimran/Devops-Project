@@ -1,67 +1,100 @@
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Navigation */
+
+/* Hero */
 #blog-hero {
   text-align: center;
   padding: 3rem 2rem;
-  background-color: #f0f8ff;
+  background: #0af;
+  color: #fff;
 }
 
 #blog-hero h1 {
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+}
+
+.post-item p {
+  padding: 0 1rem 1rem;
+  color: #555;
 }
 
 #blog-hero p {
-  margin-top: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
+/* Posts Grid */
 #posts-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
 }
 
-#posts-list article {
-  border: 1px solid #005fa3;
-  border-radius: 4px;
-  padding: 1rem;
+.post-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
-#posts-list h2 {
-  font-size: 1.25rem;
-  margin: 0 0 0.5rem;
+.post-item:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
 }
 
-#posts-list time {
+.post-item img {
+  width: 100%;
   display: block;
+}
+
+.post-item h2 {
+  font-size: 1.25rem;
+  padding: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.post-item time {
+  display: block;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  color: #777;
   margin-bottom: 0.5rem;
-  font-size: 0.875rem;
 }
 
-#posts-list img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
 
-#posts-list p {
-  margin-bottom: 0.75rem;
-}
-
-#posts-list a {
+.read-more {
+  display: inline-block;
+  margin: 0 1rem 1rem;
   text-decoration: none;
   color: #005fa3;
   font-weight: bold;
 }
 
+/* Footer */
 #footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 0;
   background-color: #222;
   color: #fff;
 }
 
-#footer a {
-  color: #eaf5ff;
+.back-link {
+  color: #ffeb3b;
   text-decoration: none;
 }
