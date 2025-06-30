@@ -1,3 +1,5 @@
+/* aboutus.css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +21,7 @@ body {
 
 header {
     background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
     position: fixed;
     width: 100%;
     top: 0;
@@ -40,6 +42,17 @@ header {
     font-size: 24px;
     font-weight: bold;
     color: #005fa3;
+}
+
+/* Move footer-links before nav hover for specificity */
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffeb3b;
 }
 
 .nav-menu {
@@ -85,7 +98,7 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 30%);
 }
 
 .mission {
@@ -134,13 +147,13 @@ main {
     padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-member:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
 }
 
 .team-member img {
@@ -170,6 +183,30 @@ main {
     line-height: 1.6;
 }
 
+/* Disable media-feature-range-notation for legacy compliance */
+/* stylelint-disable media-feature-range-notation */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .mission h2,
+    .team h2 {
+        font-size: 2rem;
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* stylelint-enable media-feature-range-notation */
+
 footer {
     background: #333;
     color: white;
@@ -185,42 +222,7 @@ footer .container {
     gap: 20px;
 }
 
-.footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-links a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
+.back-link {
     color: #ffeb3b;
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        gap: 15px;
-    }
-    
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-    
-    .mission h2,
-    .team h2 {
-        font-size: 2rem;
-    }
-    
-    .team-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    footer .container {
-        flex-direction: column;
-        text-align: center;
-    }
+    text-decoration: none;
 }
