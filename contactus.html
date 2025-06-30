@@ -1,64 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Us — ProductX</title>
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Professional Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-  <nav id="site-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contactus.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Portfolio</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactus.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <main class="contact-container">
-    <h1>Contact Us</h1>
-    <div class="contact-details">
-      <div>
-        <h2>Get in Touch</h2>
-        <p>Email: <a href="mailto:support@productx.com">support@productx.com</a></p>
-        <p>Phone: <a href="tel:+1234567890">+1 (234) 567‑890</a></p>
-        <p>Address: 123 Startup Lane, Tech City, USA</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+    <main>
+        <section class="contact-content">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="info-item">
+                            <h3>Email</h3>
+                            <p>hello@professionalportfolio.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Address</h3>
+                            <p>123 Creative Street<br>Design District, NY 10001</p>
+                        </div>
+                        <div class="social-icons">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#facebook" aria-label="Facebook">📘</a>
+                                <a href="#twitter" aria-label="Twitter">🐦</a>
+                                <a href="#linkedin" aria-label="LinkedIn">💼</a>
+                                <a href="#instagram" aria-label="Instagram">📷</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1635959873076!5m2!1sen!2sus"
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Our Location">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Professional Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
         </div>
-      </div>
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input type="text" id="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
-        <label for="message">Message</label>
-        <textarea id="message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </main>
+    </footer>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', e => {
-      e.preventDefault();
-      alert('Your message has been sent!');
-    });
-  </script>
-
-  <footer id="footer">
-    <p>&copy; 2025 ProductX Corp. All rights reserved.</p>
-    <a href="index.html" class="back-link">&#8592; Back to Home</a>
-  </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+    </script>
 </body>
 </html>
