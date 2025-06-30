@@ -2,45 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ProductX — Blog</title>
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
+  <nav id="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <header id="blog-hero">
-    <h1>ProductX Insights</h1>
+    <h1>ProductX <span class="highlight">Insights</span></h1>
     <p>Latest news, tips, and updates about ProductX and industry trends.</p>
   </header>
 
   <section id="posts-list">
-    <article id="post-1">
+    <article class="post-item">
       <h2>How ProductX Boosts Your Productivity</h2>
-      <time datetime="2025-06-15">June 15, 2025</time>
-      <img src="https://source.unsplash.com/featured/300x200?graph" alt="Graph showing productivity increase with ProductX" id="post1-image">
-      <p>Discover the top ways ProductX helps you accomplish more in less time, with real-world case studies and expert tips.</p>
-      <a href="#" id="readmore-1">Read More</a>
+      <time datetime="2025-06-15">June 15, 2025</time>
+      <img src="https://source.unsplash.com/300x200?productivity" alt="Productivity graph">
+      <p>Discover the top ways ProductX helps you accomplish more in less time.</p>
+      <a href="#" class="read-more">Read More</a>
     </article>
-
-    <article id="post-2">
+    <article class="post-item">
       <h2>Security Best Practices with ProductX</h2>
-      <time datetime="2025-06-01">June 1, 2025</time>
-      <img src="https://source.unsplash.com/featured/300x200?security" alt="Secure lock representing ProductX security" id="post2-image">
-      <p>Learn how to leverage ProductX’s built-in security features to protect your data and maintain compliance.</p>
-      <a href="#" id="readmore-2">Read More</a>
+      <time datetime="2025-06-01">June 1, 2025</time>
+      <img src="https://source.unsplash.com/300x200?security" alt="Security lock">
+      <p>Learn how to leverage ProductX’s security features to protect your data.</p>
+      <a href="#" class="read-more">Read More</a>
     </article>
-
-    <article id="post-3">
+    <article class="post-item">
       <h2>Scaling Your Workflow Seamlessly</h2>
-      <time datetime="2025-05-20">May 20, 2025</time>
-      <img src="https://source.unsplash.com/featured/300x200?scalability" alt="Illustration of scalable workflow using ProductX" id="post3-image">
-      <p>Explore how ProductX adapts to growing demands and keeps performance high as your user base expands.</p>
-      <a href="#" id="readmore-3">Read More</a>
+      <time datetime="2025-05-20">May 20, 2025</time>
+      <img src="https://source.unsplash.com/300x200?scalability" alt="Scalable growth">
+      <p>Explore how ProductX adapts to growing demands and keeps performance high.</p>
+      <a href="#" class="read-more">Read More</a>
     </article>
   </section>
 
   <footer id="footer">
-    <p>&copy; 2025 ProductX Corp. All rights are reserved.</p>
-    <a href="homepage.html">&#8592; Back to Home</a>
+    <p>&copy; 2025 ProductX Corp. All rights reserved.</p>
+    <a href="index.html" class="back-link">&#8592; Back to Home</a>
   </footer>
 </body>
 </html>

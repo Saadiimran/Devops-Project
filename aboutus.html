@@ -2,38 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ProductX — About Us</title>
   <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
+  <nav id="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <header id="about-hero">
-    <h1>about productx</h1>
+    <h1>About <span class="highlight">ProductX</span></h1>
     <p>At ProductX, our mission is to deliver innovative solutions that empower businesses worldwide.</p>
-    <img src="https://source.unsplash.com/featured/400x200?teamwork" alt="Team collaborating on ProductX" id="about-hero-image">
+    <img src="https://source.unsplash.com/800x300?team" alt="Team collaborating" id="about-hero-image">
   </header>
 
   <section id="company-mission">
-    <h2>our mission</h2>
-    <p>We strive to enhance productivity, security, and scalability through user-centric design and cutting-edge technology.</p>
+    <h2>Our Mission</h2>
+    <p>We strive to enhance productivity, security, and scalability through user‑centric design and cutting‑edge technology.</p>
   </section>
 
   <section id="team">
-    <h2>meet the team</h2>
+    <h2>Meet the Team</h2>
     <div class="team-grid">
-      <div id="member-1" class="team-member">
-        <img src="https://source.unsplash.com/featured/150x150?person1" alt="Photo of Alice, ProductX CEO" class="member-photo">
-        <h3>alice smith</h3>
+      <div class="team-member">
+        <img src="https://source.unsplash.com/150x150?person1" alt="Alice Smith" class="member-photo">
+        <h3>Alice Smith</h3>
         <p>Chief Executive Officer</p>
       </div>
-      <div id="member-2" class="team-member">
-        <img src="https://source.unsplash.com/featured/150x150?person2" alt="Photo of Bob, ProductX CTO" class="member-photo">
-        <h3>bob johnson</h3>
+      <div class="team-member">
+        <img src="https://source.unsplash.com/150x150?person2" alt="Bob Johnson" class="member-photo">
+        <h3>Bob Johnson</h3>
         <p>Chief Technology Officer</p>
       </div>
-      <div id="member-3" class="team-member">
-        <img src="https://source.unsplash.com/featured/150x150?person3" alt="Photo of Carol, ProductX COO" class="member-photo">
-        <h3>carol lee</h3>
+      <div class="team-member">
+        <img src="https://source.unsplash.com/150x150?person3" alt="Carol Lee" class="member-photo">
+        <h3>Carol Lee</h3>
         <p>Chief Operations Officer</p>
       </div>
     </div>
@@ -41,7 +52,7 @@
 
   <footer id="footer">
     <p>&copy; 2025 ProductX Corp. All rights reserved.</p>
-    <a href="homepage.html">&#8592; back to home</a>
+    <a href="index.html" class="back-link">&#8592; Back to Home</a>
   </footer>
 </body>
 </html>

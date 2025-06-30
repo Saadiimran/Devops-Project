@@ -2,42 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ProductX — Services</title>
   <link rel="stylesheet" href="services.css">
 </head>
 <body>
+  <nav id="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <header id="services-hero">
-    <h1>our services</h1>
+    <h1>Our <span class="highlight">Services</span></h1>
     <p>Explore the powerful solutions ProductX offers to streamline your workflow.</p>
   </header>
 
   <section id="services-list">
-    <article id="service-consulting">
-      <img src="https://source.unsplash.com/featured/100x100?consulting" alt="Consulting service icon" class="service-icon">
-      <h2>consulting</h2>
+    <article class="service-card">
+      <img src="https://source.unsplash.com/100x100?consulting" alt="Consulting icon" class="service-icon">
+      <h2>Consulting</h2>
       <p>Expert guidance to help you integrate ProductX seamlessly into your operations.</p>
     </article>
-    <article id="service-integration">
-      <img src="https://source.unsplash.com/featured/100x100?integration" alt="Integration service icon" class="service-icon">
-      <h2>integration</h2>
+    <article class="service-card">
+      <img src="https://source.unsplash.com/100x100?integration" alt="Integration icon" class="service-icon">
+      <h2>Integration</h2>
       <p>Custom API and platform integration to connect ProductX with your existing tools.</p>
     </article>
-    <article id="service-support">
-      <img src="https://source.unsplash.com/featured/100x100?support" alt="Support service icon" class="service-icon">
-      <h2>support</h2>
+    <article class="service-card">
+      <img src="https://source.unsplash.com/100x100?support" alt="Support icon" class="service-icon">
+      <h2>Support</h2>
       <p>24/7 customer support to ensure your ProductX experience is always smooth.</p>
     </article>
-    <article id="service-training">
-      <img src="https://source.unsplash.com/featured/100x100?training" alt="Training service icon" class="service-icon">
-      <h2>training</h2>
-      <p>Hands-on workshops and tutorials to get your team up to speed quickly.</p>
+    <article class="service-card">
+      <img src="https://source.unsplash.com/100x100?training" alt="Training icon" class="service-icon">
+      <h2>Training</h2>
+      <p>Hands‑on workshops and tutorials to get your team up to speed quickly.</p>
     </article>
   </section>
 
   <footer id="footer">
     <p>&copy; 2025 ProductX Corp. All rights reserved.</p>
-    <a href="homepage.html">&#8592; back to home</a>
+    <a href="index.html" class="back-link">&#8592; Back to Home</a>
   </footer>
 </body>
 </html>
