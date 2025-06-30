@@ -158,22 +158,3 @@ footer .container {
   }
 }
 
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .cta-button {
-    padding: 12px 25px;
-    font-size: 16px;
-  }
-
-  footer .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
