@@ -1,0 +1,57 @@
+#services-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #e8f4fc;
+}
+
+#services-hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+#services-hero p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+#services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#services-list article {
+  text-align: center;
+  border: 1px solid #005fa3;
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.service-icon {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+#services-list h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+#services-list p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+#footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+#footer a {
+  color: #005fa3;
+  text-decoration: none;
+}
