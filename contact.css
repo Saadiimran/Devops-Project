@@ -1,12 +1,14 @@
-
-* {
+/* Global Reset & Base */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen, ubuntu, cantarell, sans-serif;
+    font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #fafafa;
@@ -20,7 +22,7 @@ body {
 
 header {
     background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,6 +61,17 @@ header {
 .nav-menu a:hover,
 .nav-menu a.active {
     color: #005fa3;
+}
+
+/* Footer Links should be declared before nav hover to satisfy specificity */
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffeb3b;
 }
 
 main {
@@ -158,7 +171,7 @@ main {
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 2px solid #e1e5e9;
+    border: 2px solid rgb(225 229 233 / 10%);
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -186,13 +199,13 @@ main {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 95, 163, 0.3);
+    box-shadow: 0 4px 15px rgb(0 95 163 / 30%);
 }
 
 .submit-btn:hover {
     background: #004080;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 95, 163, 0.4);
+    box-shadow: 0 6px 20px rgb(0 95 163 / 40%);
 }
 
 .map-section {
@@ -209,8 +222,41 @@ main {
 
 .map-section iframe {
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgb(0 0 0 / 10%);
 }
+
+/* Disable media-feature-range-notation for legacy support */
+/* stylelint-disable media-feature-range-notation */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    .contact-content h1 {
+        font-size: 2.2rem;
+    }
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 1.6rem;
+    }
+    .map-section h2 {
+        font-size: 2rem;
+    }
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-layout {
+        gap: 40px;
+    }
+}
+/* stylelint-enable media-feature-range-notation */
 
 footer {
     background: #333;
@@ -227,52 +273,7 @@ footer .container {
     gap: 20px;
 }
 
-.footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-links a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
+.back-link {
     color: #ffeb3b;
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        gap: 15px;
-    }
-    
-    .contact-content h1 {
-        font-size: 2.2rem;
-    }
-    
-    .contact-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .contact-info h2,
-    .contact-form h2 {
-        font-size: 1.6rem;
-    }
-    
-    .map-section h2 {
-        font-size: 2rem;
-    }
-    
-    footer .container {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .contact-layout {
-        gap: 40px;
-    }
+    text-decoration: none;
 }
