@@ -152,10 +152,12 @@ footer .container {
   color: #ffeb3b;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-menu {
     gap: 15px;
   }
+}
+
 
   .hero-content h1 {
     font-size: 2.5rem;
