@@ -74,17 +74,17 @@ header {
     transition: color 0.3s ease;
 }
 
+
+.footer-links a:hover {
+    color: #ffeb3b;
+}
+
 .nav-menu a:hover,
 .nav-menu a.active {
     color: #005fa3;
 }
 
 /* Footer Links should be declared before nav hover to satisfy specificity */
-
-
-.footer-links a:hover {
-    color: #ffeb3b;
-}
 
 main {
     margin-top: 70px;
