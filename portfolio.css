@@ -208,4 +208,19 @@ footer .container {
   }
   
   .portfolio-overlay h3 {
-    colo
+    color: #ffeb3b;
+  }
+  
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* stylelint-disable media-feature-range-notation */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* stylelint-enable media-feature-range-notation */
