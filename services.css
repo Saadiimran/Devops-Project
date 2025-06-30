@@ -191,7 +191,7 @@ footer .container {
         flex-direction: column;
         text-align: center;
     }
-}
+
 
 @media screen and (769px <= width <= 1024px) {
   .services-grid {
