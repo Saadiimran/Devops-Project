@@ -58,6 +58,16 @@ header {
     transition: color 0.3s ease;
 }
 
+.social-links a {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
 .nav-menu a:hover,
 .nav-menu a.active {
     color: #005fa3;
@@ -135,15 +145,7 @@ main {
     gap: 15px;
 }
 
-.social-links a {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 50%;
-    background: #f8f9fa;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
+
 
 .social-links a:hover {
     background: #005fa3;
@@ -167,6 +169,11 @@ main {
     color: #333;
 }
 
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -184,10 +191,7 @@ main {
     border-color: #005fa3;
 }
 
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
+
 
 .submit-btn {
     background: #005fa3;
@@ -231,20 +235,25 @@ main {
     .nav-menu {
         gap: 15px;
     }
+    
     .contact-content h1 {
         font-size: 2.2rem;
     }
+    
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+    
     .contact-info h2,
     .contact-form h2 {
         font-size: 1.6rem;
     }
+    
     .map-section h2 {
         font-size: 2rem;
     }
+    
     footer .container {
         flex-direction: column;
         text-align: center;
